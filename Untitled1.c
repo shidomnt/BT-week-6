@@ -3,11 +3,11 @@
 #include<stdio.h>
 #include<string.h>
 
-//int swap(char a, char b){
-//	char n;
-//	n=a; a=b; b=n;
-//	return a,b;
-//}
+int swap(char &a, char &b){
+	char n;
+	n=a; a=b; b=n;
+	return a,b;
+}
 
 int main(){
 	printf("Nhap 1 chuoi ky tu: ");
@@ -18,10 +18,7 @@ int main(){
 	for(i=0;i<n-1;i++){
 		for(j=i+1;j<n;j++){
 			if(arr[i]>arr[j]){
-				char tmp;
-				tmp= arr[i];
-				arr[i]= arr[j];
-				arr[j]= tmp;
+				swap(arr[i],arr[j];
 			}
 		}
 	}
